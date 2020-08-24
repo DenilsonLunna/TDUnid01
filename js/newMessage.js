@@ -60,7 +60,7 @@ function refreshMessages() {
         image.alt = 'deletar'
         image.style.width = '20px'
         image.style.height = '20px'
-        image.style.marginLeft = '10px'
+       
 
         button.className = "button"
         button.style.width = "20px";
