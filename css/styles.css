@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EFEFEE;
+}
+body ul,li {
+    list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0;
+}
+#button-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    
+}
+.button{
+	
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border: none;
+    width: 333px;
+    height: 50px;
+    color: white;
+   
+
+}
+
+#container{
+    margin: 10px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+#messages{
+    display: flex;
+    flex-direction: column;
+    width: 295px;
+}
+#messages div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 295px;
+    
+}
+#messages-section ul{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+#messages-section ul li{
+   margin-bottom: 10px;
+   color: white;}
+#newMessage-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#newMessage-section h1{
+    color: #ffffffee;
+}
+#newMessage-section form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+    
+}
+#newMessage-section form input{
+    outline:none;
+    
+    
+}
+
+#newMessage-section form h2{
+    font-size: 14px;
+}
+#newMessage-section form div{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 10px;
+    
+}
+#button-submit{
+    background-color: #8B7F78;
+    border: 1px solid white;
+}
+#newMessage-section form div h2{
+    color: #ffffffee;
+    
+}
+#input-name{
+    width: 225px;
+}
+

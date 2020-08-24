@@ -44,18 +44,17 @@ function refreshMessages() {
         let div = document.createElement("div");
 
         
-        let nameValue = document.createTextNode(element.name);
+        let nameValue = document.createTextNode(element.name+": ");
         let messageValue = document.createTextNode(element.message);
 
-
-        let h2NameValue = document.createElement("h2");
-        h2NameValue.appendChild(nameValue);
-        let h2MessageValue = document.createElement("h2");
-        h2MessageValue.appendChild(messageValue);
-
         let del = document.createElement("button");
-        let deletTxt = document.createTextNode("Delete");
-        del.appendChild(deletTxt);
+        
+        del.className = "button"
+        del.style.width = "70px";
+        del.style.height = "20px";
+        del.appendChild(document.createTextNode("Delete"));
+        del.style.color = "#040404";
+    
         del.addEventListener("click", ()=>{
            let li = del.parentElement.parentElement;
            deleteMessage(li.id);
