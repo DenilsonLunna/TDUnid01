@@ -11,37 +11,30 @@
         <section id="button-section">
             <button id="button-color-01" class="button"></button>
             <button id="button-color-02" class="button"></button>
-            <button id="button-color-03" class="button"></button>
-          
-           
-
+            <button id="button-color-03" class="button"></button>                     
         </section>
 
         
 
 
         <section id="newMessage-section">
-            <h1>Leave Your Message</h1>
+            <h1>Deixe sua mensagem</h1>
             <form id="form-newMessage" action="submit">
                 <div>
-                    <h2>Nome</h2>
-                    <input id="input-name" type="text">
+                    <input id="input-name"  placeholder="Digite seu nome..." type="text">
                 </div>
                 <div>
-                    <h2>Message</h2>
-                    <textarea id="input-message" cols="30" rows="5"></textarea>
+                    <input id="input-message" placeholder="Digite sua mensagem..." type="text"></input>
                 </div>
                 
-                <button id="button-submit" class="button" type="submit">Send</button>
+               <div id="containerButton">
+                   <button id="button-submit" class="button" type="submit"><img id='imgSend' src="./icons/sends.png" alt="send"></button>                   
+               </div>
             </form>
 
         </section>
-
         <section id="messages-section">
-            <ul id="messages">
-
-
-            </ul>
+            <ul id="messages"></ul>
 
         </section>
 

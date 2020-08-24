@@ -1,0 +1,11 @@
+{
+  "name": "TDUnid01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DenilsonLunna/TDUnid01.git",
+  "author": "<ismaelsousa1998@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx serve . "
+  }
+}

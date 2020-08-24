@@ -41,32 +41,47 @@ function refreshMessages() {
     messages.forEach(element => {
         let li = document.createElement("li");
         li.id = element.idElement;
-        let div = document.createElement("div");
+        let span = document.createElement("span");
+        span.style.color='black'
 
         
-        let nameValue = document.createTextNode(element.name+": ");
-        let messageValue = document.createTextNode(element.message);
+        let nameValue = document.createTextNode(element.name+": "+element.message);
 
-        let del = document.createElement("button");
+         /**
+         * button
+         */
+        let button = document.createElement("button");
         
-        del.className = "button"
-        del.style.width = "70px";
-        del.style.height = "20px";
-        del.appendChild(document.createTextNode("Delete"));
-        del.style.color = "#040404";
+        /**
+         * Imagem
+         */
+        let image = document.createElement("img")
+        image.src = 'https://image.flaticon.com/icons/png/512/126/126468.png'
+        image.alt = 'deletar'
+        image.style.width = '20px'
+        image.style.height = '20px'
+        image.style.marginLeft = '10px'
+
+        button.className = "button"
+        button.style.width = "20px";
+        button.style.height = "20px";
+      
+        button.style.marginLeft = "20px";
+        button.appendChild(document.createTextNode(""));
+        button.appendChild(image);
+
+        button.style.color = "#040404";
+        button.style.backgroundColor = "transparent";
     
-        del.addEventListener("click", ()=>{
-           let li = del.parentElement.parentElement;
+        button.onclick = ()=>{
+           let li = button.parentElement;
            deleteMessage(li.id);
            refreshMessages();
-        })
+        }
+        span.appendChild(nameValue);
 
-
-        div.appendChild(nameValue);
-        div.appendChild(messageValue);
-        div.appendChild(del);
-
-        li.appendChild(div);
+        li.appendChild(span);
+        li.appendChild(button);
         li.classList.add("messagesInd");
         ul.appendChild(li);
     });
